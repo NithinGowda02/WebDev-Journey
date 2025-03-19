@@ -3,68 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main {
-    color: azure;
-    background-color: black;
-    font-size: 40px;
+h1 {
+    font-size: 60px;
+    color: #010606;
     text-align: center;
-   
-}
-.main1 {
-    color: azure;
-    background-color: black;
-    font-size: 40px;
-    text-align: center;
-   }
-
-.flex-layout {
-    background-color: aqua;
     padding: 20px;
-    margin: 20px;
-    display: flex;
-    /*flex-wrap: wrap;*/
-    gap: 10px;
-    justify-content: space-evenly;
-    align-items: stretch;
+    margin-left: 200px;
 }
-.box {
-    background-color: rgb(113, 91, 134);
-    padding: 20px;
-    color: azure;
-    flex: 1;
-
-}
-.grid-layout {
-    padding: 20px;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: blueviolet;
-    gap: 10px;
+@keyframes ButtonAnimation {
+    from {
+        background-color: green;
+        padding: 20px;
+    }
+    to {
+        background-color: aqua;
+        padding: 35px;
+    }
     
 }
-.grid {
-    padding: 25px;
+
+.button {
+    padding: 20px;
+    font-size: 25px;
+    background-color: black;
     color: #ffffff;
-    background-color: black;
-    border: 3px solid #ffffff;
-}
-
-@media screen and (max-width:800px) {
-    .flex-layout {
-        flex-direction: column;
-    }
-
-    .grid-layout {
-        grid-template-columns: 1fr 1fr;
-    }
+    border-radius: 8px;
+    margin: 50px;
+    animation-name: ButtonAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     
 }
-@media screen and (max-width : 760px) {
-    .main {
-        font-size: 25px;
-    }
-    .main1 {
-        font-size: 25px;
-    }
+.button:hover {
+    font-size: 35px;
+    color: green;
+    font-weight: bold;
 }
